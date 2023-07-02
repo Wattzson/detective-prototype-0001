@@ -1,0 +1,6 @@
+# Ignore the save files
+save/
+
+# Ignore the temporary files
+temp/
+

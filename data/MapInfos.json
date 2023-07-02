@@ -1,6 +1,9 @@
 [
 null,
 {"id":1,"expanded":true,"name":"Intro Train","order":1,"parentId":0,"scrollX":811,"scrollY":457},
-null,
-{"id":3,"expanded":false,"name":"Town1","order":2,"parentId":0,"scrollX":819,"scrollY":647}
+{"id":2,"expanded":true,"name":"Saloon","order":3,"parentId":3,"scrollX":811,"scrollY":457},
+{"id":3,"expanded":true,"name":"Town1","order":2,"parentId":0,"scrollX":819,"scrollY":647},
+{"id":4,"expanded":false,"name":"Town Center","order":4,"parentId":3,"scrollX":811,"scrollY":457},
+{"id":5,"expanded":false,"name":"Clinic","order":5,"parentId":3,"scrollX":811,"scrollY":457},
+{"id":6,"expanded":false,"name":"Trading Shop","order":6,"parentId":3,"scrollX":811,"scrollY":457}
 ]

@@ -1,6 +1,6 @@
 [
 null,
-{"id":1,"expanded":true,"name":"Intro Train","order":2,"parentId":0,"scrollX":811,"scrollY":457},
-{"id":2,"expanded":false,"name":"IntroSteamPunkTrain","order":1,"parentId":0,"scrollX":0,"scrollY":0},
-{"id":3,"expanded":false,"name":"Town1","order":3,"parentId":0,"scrollX":819,"scrollY":647}
+{"id":1,"expanded":true,"name":"Intro Train","order":1,"parentId":0,"scrollX":811,"scrollY":457},
+null,
+{"id":3,"expanded":false,"name":"Town1","order":2,"parentId":0,"scrollX":819,"scrollY":647}
 ]

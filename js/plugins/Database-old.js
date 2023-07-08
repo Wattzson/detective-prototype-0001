@@ -52,6 +52,27 @@
 
 (() => {
     console.log('The basic plugin has been loaded and run! -database');
+
+     // Plugin command handlers
+    PluginManager.registerCommand('Database', 'AddData', args => {
+      const category = String(args.category || '');
+      const name = String(args.name || '');
+      const description = String(args.description || '');
+      const image = String(args.image || '');
+      $gameDatabase.addData(category, name, description, image);
+    });
+
+    PluginManager.registerCommand('Database', 'RemoveData', args => {
+      const category = String(args.category || '');
+      const name = String(args.name || '');
+      $gameDatabase.removeData(category, name);
+    });
+
+    PluginManager.registerCommand('Database', 'ClearData', args => {
+      const category = String(args.category || '');
+      $gameDatabase.clearData(category);
+    }); 
+    
     // Plugin parameters
     const parameters = PluginManager.parameters('Database');
     const menuCommand = String(parameters['menuCommand'] || 'Database');
@@ -267,26 +288,5 @@
         this.setHelpWindowItem(this.item());
       }
     }
-    
-    
-      
-        // Plugin command handlers
-        PluginManager.registerCommand('Database', 'AddData', args => {
-          const category = String(args.category || '');
-          const name = String(args.name || '');
-          const description = String(args.description || '');
-          const image = String(args.image || '');
-          $gameDatabase.addData(category, name, description, image);
-        });
-      
-        PluginManager.registerCommand('Database', 'RemoveData', args => {
-          const category = String(args.category || '');
-          const name = String(args.name || '');
-          $gameDatabase.removeData(category, name);
-        });
-      
-        PluginManager.registerCommand('Database', 'ClearData', args => {
-          const category = String(args.category || '');
-          $gameDatabase.clearData(category);
-        });
+
 });

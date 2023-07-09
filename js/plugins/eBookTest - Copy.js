@@ -342,6 +342,3 @@ PluginManager.registerCommand('eBookTest', 'AddDatabaseEntry', args => {
     var entryData = JSON.parse(args.entryData); // Parse entryData here
     $gameSystem.addDatabaseEntry(entryType, entryId, entryData);
 });
-
-
-    
